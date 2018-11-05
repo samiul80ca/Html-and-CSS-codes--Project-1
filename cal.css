@@ -1,0 +1,108 @@
+<style>
+body
+{
+background-color:#dceade;
+}
+h2
+{
+text-align:center;
+text-decoration:underline;
+}
+.box
+{
+background-color:#3d4543;
+height:375px;
+width:280px;
+border-radius:10px;
+position:relative;
+top:80px;
+left:40%;
+}
+.display
+{
+background-color:#222;
+width:250px;
+position:relative;
+left:15px;
+top:20px;
+height:40px;
+}
+.display input
+{
+position:relative;
+left:2px;
+top:2px;
+height:35px;
+color:black;
+background-color:#bccd95;
+font-size:21px;
+text-align:right;
+}
+.keys
+{
+position:relative;
+top:15px;
+}
+.button
+{
+width:50px;
+height:40px;
+border:none;
+border-radius:8px;
+margin-left:17px;
+cursor:pointer;
+border-top:2px solid transparent;
+}
+.button.nonfn
+{
+color:black;
+background-color:gray;
+border-bottom:black 2px solid;
+border-top:2px #6f6f6f solid;
+}
+.button.operators
+{
+color:white;
+font-size: 30;
+background-color:black;
+border-bottom:black 2px solid;
+}
+.button.numbers
+{
+color:black;
+background-color:white;
+border-bottom:black 2px solid;
+border-top:2px 303030 solid;
+}
+.button.equal
+{
+color:black;
+background-color:EE3366;
+border-bottom:black 2px solid;
+border-top:2px EE3366 solid;
+}
+.nonfn:active
+{
+border-top:black 2px solid;
+border-bottom:2px #6f6f6f solid;
+}
+.operators:active
+{
+border-top:black 2px solid;
+border-bottom:#ff4561 2px solid;
+}
+.numbers:active
+{
+border-top:black 2px solid;
+border-bottom:#303030 2px solid;
+}
+.equal:active
+{
+border-top:black 2px solid;
+border-bottom:EE3366 2px solid;
+}
+p
+{
+line-height:10px;
+}
+</style>

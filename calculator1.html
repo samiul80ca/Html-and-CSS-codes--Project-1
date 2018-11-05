@@ -1,0 +1,50 @@
+<html>
+<!----DS8007_HW-4_Calculator---->
+<head>
+<script>
+function c(val)
+{
+	document.getElementById("d").value=val;
+}
+function v(val)
+{
+	document.getElementById("d").value+=val;
+}
+function e() 
+{ 
+	try 
+	{ 
+	  c(eval(document.getElementById("d").value)) 
+	} 
+	catch(e) 
+	{
+	  c('Error') 
+	} 
+}
+</script>
+</head>
+<head1>
+<link rel="stylesheet" type="text/css" href="cal.css">
+</head1>
+<body>
+<h2>DS8007:HW-4 by ID: 500602494 </h2>
+<h3> This simple calculator is developed for the purpose of "Advance Data Visualization" homework.  </h3>
+<li> The numbers are in white background with black font and the operators are in black background with white font. Operators font is larger than the numbers. 
+<li> The operators are in vertical grid and the numbers are in horizontal grid. The numbers are sequenced in increasing order from bottom to top (i.e. 1,2,3 at the bottom row and 7,8,9 at the top row)
+<li> The top 3 buttons above the numbers (mrc, m-, m+) would be implemented later as they are not the part of this homework. 
+<li> The calculator has been visualized in both chrome and IE and workes perfectly. The calculator is full functioning as per the requirement of this homework. 
+</li>
+<div class="box">
+	<div class="display"><input type="text" readonly size="18" id="d"></div>
+	<div class="keys">
+		<p><input type="button" class="button nonfn" value="mrc" onclick='c("Not part of this HW")'><input type="button" class="button nonfn" value="m-" onclick='c("Not part of this HW")'><input type="button" class="button nonfn" value="m+" onclick='c("Not part of this HW")'><input type="button" class="button operators" value="/" onclick='v("/")'></p>
+		<p><input type="button" class="button numbers" value="7" onclick='v("7")'><input type="button" class="button numbers" value="8" onclick='v("8")'><input type="button" class="button numbers" value="9" onclick='v("9")'><input type="button" class="button operators" value="*" onclick='v("*")'></p>
+		<p><input type="button" class="button numbers" value="4" onclick='v("4")'><input type="button" class="button numbers" value="5" onclick='v("5")'><input type="button" class="button numbers" value="6" onclick='v("6")'><input type="button" class="button operators" value="-" onclick='v("-")'></p>
+		<p><input type="button" class="button numbers" value="1" onclick='v("1")'><input type="button" class="button numbers" value="2" onclick='v("2")'><input type="button" class="button numbers" value="3" onclick='v("3")'><input type="button" class="button operators" value="+" onclick='v("+")'></p>
+		<p><input type="button" class="button numbers" value="0" onclick='v("0")'><input type="button" class="button numbers" value="." onclick='v(".")'><input type="button" class="button numbers" value="C" onclick='c("")'><input type="button" class="button equal" value="=" onclick='e()'></p>
+	</div>
+</div>
+
+</body>
+<!-----DS8007_HW-4_Calculator------->
+</html>
